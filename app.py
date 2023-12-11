@@ -12,7 +12,7 @@ LABELS = ['Airplane', 'Automobile', 'Bird', 'Cat', 'Deer', 'Dog', 'Frog', 'Horse
 # Create a function to load my saved model
 @st.cache_data()
 def load_my_model():
-    model = tf.keras.models.load_model("/Users/fb/Desktop/webapp/Cifar10classification/cifar10model.h5")
+    model = tf.keras.models.load_model("cifar10model.h5")
     return model
 
 model = load_my_model()
