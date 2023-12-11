@@ -28,7 +28,7 @@ file = st.file_uploader("Upload the image" , type=["jpg" , "png"])
 # Create a function to take and image and predict the class
 def import_and_predict(image_data , model):
     size = (32 ,32)
-    image = ImageOps.fit(image_data , size , PIL.Image.Resampling.LANCZOS)
+    image = ImageOps.fit(image_data , size , Image.Resampling.LANCZOS)
     img = np.asarray(image)
     img_reshape = img[np.newaxis,...]
     prediction = model.predict(img_reshape)
