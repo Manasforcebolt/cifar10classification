@@ -10,7 +10,7 @@ import tensorflow as tf
 LABELS = ['Airplane', 'Automobile', 'Bird', 'Cat', 'Deer', 'Dog', 'Frog', 'Horse', 'Ship', 'Truck']
 
 # Create a function to load my saved model
-@st.cache_data(allow_output_mutation=True)
+@st.cache_data()
 def load_my_model():
     model = tf.keras.models.load_model("/Users/fb/Desktop/webapp/Cifar10classification/cifar10model.h5")
     return model
