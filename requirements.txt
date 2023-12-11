@@ -1,0 +1,6 @@
+numpy
+pandas
+matplotlib
+tensorflow
+scikit-learn
+pillow==9.5.0
